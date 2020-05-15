@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 import Book from "./Book";
-import {Col, Row} from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const Books = (props) => {
     return (
         <Row>
-            {
-                props.items.map((item) => {
-                    return <Col xs={3}>
+            {props.items.map((item) => {
+                return (
+                    <Col xs={3}>
                         <Book {...item} />
                     </Col>
-                })
-            }
+                );
+            })}
         </Row>
     );
 };

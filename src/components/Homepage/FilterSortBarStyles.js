@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {NavbarText, InputGroup } from 'reactstrap';
+import { NavbarText, InputGroup } from "reactstrap";
 
 export const StyledNavbarText = styled(NavbarText)`
     margin-left: 15px;
-    color: ${props => props.active ? "#FF8247" : "#035491"};
+    color: ${(props) => (props.active ? "#FF8247" : "#035491")};
     cursor: pointer;
 `;
 

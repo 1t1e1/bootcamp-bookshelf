@@ -2,31 +2,29 @@ import React from "react";
 import { Homepage, AddBook } from "./containers";
 
 const routes = [
-  {
-    title: "Home Page",
-    path: "/",
-    exact: true,
-    componentProps: {
+    {
+        title: "Home Page",
+        path: "/",
+        exact: true,
+        componentProps: {},
+        component: Homepage,
     },
-    component: Homepage,
-  },
-  {
-    title: "Add Book",
-    path: "/add-book",
-    exact: false,
-    componentProps: {
+    {
+        title: "Add Book",
+        path: "/add-book",
+        exact: false,
+        componentProps: {},
+        component: AddBook,
     },
-    component: AddBook,
-  },
-  {
-    title: "Edit Book",
-    path: "/edit-book/:id",
-    exact: false,
-    componentProps: {
-      isEdit: true
+    {
+        title: "Edit Book",
+        path: "/edit-book/:id",
+        exact: false,
+        componentProps: {
+            isEdit: true,
+        },
+        component: AddBook,
     },
-    component: AddBook
-  }
 ];
 
 export default routes;
