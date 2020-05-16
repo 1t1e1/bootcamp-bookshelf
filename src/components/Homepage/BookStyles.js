@@ -6,4 +6,5 @@ export const StyledBookCard = styled(Card)`
     .card-img-top {
         height: 250px;
     }
+    margin-bottom: 20px;
 `;
