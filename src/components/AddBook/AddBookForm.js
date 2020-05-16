@@ -18,6 +18,7 @@ import { withRouter } from "react-router";
 const validationSchema = Yup.object().shape({
     title: Yup.string().required("Title is a required field"),
     author: Yup.string().required("Author is a required field"),
+    review: Yup.string().min(30, "Review must be 30 characters or more"),
 });
 
 const AddBookForm = (props) => {
@@ -30,9 +31,11 @@ const AddBookForm = (props) => {
         rating: "",
         imageUrl: "",
         status: "",
+        review: "",
     };
     if (props.isEdit && props.book) {
-        initialValues = { ...props.book };
+        // review gerekli olup olmadigini iyice sordula
+        initialValues = { review: "", ...props.book };
     }
     return (
         <div>
@@ -148,6 +151,20 @@ const AddBookForm = (props) => {
                                     return <option>{status}</option>;
                                 })}
                             </Input>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="review">Review</Label>
+                            <Input
+                                type="textarea"
+                                name="review"
+                                id="review"
+                                value={values.review}
+                                onChange={handleChange}
+                                invalid={errors.review}
+                            />
+                            {errors.review && (
+                                <FormFeedback>{errors.review}</FormFeedback>
+                            )}
                         </FormGroup>
                         {props.isEdit ? (
                             <Button color="primary">Save</Button>
