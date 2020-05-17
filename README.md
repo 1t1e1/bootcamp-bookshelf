@@ -5,7 +5,9 @@
     -   [x] Validation yapildi.
 -   [x] Kitab ekleme sayfasina "goodreads link" diye bir alan ekleyelim, url olsun ve ve on tarafta da bunu gosterip tikladigimizda yeni sekmede kitabin goodreads sayfasina gitsin.
 -   [ ] Su anda kitap ismine gore arama yapan kisim ayrica yazara gore de arama yapsin.
--   [ ] (Bonus odev) Kitaplar su anda yanyana bir sekilde gozukuyor. Bunu da kullanicinin sececegi bir butonla yapalim. Cards secilirse su anki gibi gozuksun, list secilirse altalta gozuksun. bu sayfa yenilenmeden veya baska bir route a gitmeden gerceklessin.
+-   [x] (Bonus odev) Kitaplar su anda yanyana bir sekilde gozukuyor. Bunu da kullanicinin sececegi bir butonla yapalim. Cards secilirse su anki gibi gozuksun, list secilirse altalta gozuksun. bu sayfa yenilenmeden veya baska bir route a gitmeden gerceklessin.
+    -   [x] Yapildi.
+    -   [ ] List view deyken, addbook veya edit e girip anasayfaya geri dondugunde list view korunmuyor. Bunun icin component state yerine redux store veya local storage kullanmaliyim.
 
 Extra,
 

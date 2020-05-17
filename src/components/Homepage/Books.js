@@ -7,7 +7,7 @@ const Books = (props) => {
         <Row>
             {props.items.map((item) => {
                 return (
-                    <Col xs={3}>
+                    <Col xs={props.view}>
                         <Book {...item} />
                     </Col>
                 );

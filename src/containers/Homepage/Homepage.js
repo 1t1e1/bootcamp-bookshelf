@@ -2,11 +2,12 @@ import React from "react";
 import { connect } from "react-redux";
 import { Books, FilterSortBar } from "../../components";
 import { getBooks } from "../../state/ducks/books/action";
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 
 class Homepage extends React.Component {
     constructor(props) {
         super(props);
+        this.state = { bookViewNumber: 3 };
     }
 
     componentDidMount() {
@@ -57,11 +58,27 @@ class Homepage extends React.Component {
         if (sortedBooks.length < 1) {
             books = <h2>NO BOOKS HERE</h2>;
         } else {
-            books = <Books items={sortedBooks} />;
+            books = (
+                <Books items={sortedBooks} view={this.state.bookViewNumber} />
+            );
         }
         return (
             <div>
                 <FilterSortBar />
+                <Button
+                    onClick={() => {
+                        this.setState({ bookViewNumber: 12 });
+                    }}
+                >
+                    List View
+                </Button>{" "}
+                <Button
+                    onClick={() => {
+                        this.setState({ bookViewNumber: 3 });
+                    }}
+                >
+                    Item View
+                </Button>
                 <Container>
                     <div className="books-holder">{books}</div>
                 </Container>
