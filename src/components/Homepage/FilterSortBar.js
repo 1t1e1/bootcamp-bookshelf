@@ -54,9 +54,10 @@ const FilterSortBar = (props) => {
                     <Col xs={6}>
                         <StyledInputGroup>
                             <InputGroupAddon addonType="prepend">
-                                <InputGroupText>Search by name</InputGroupText>
+                                <InputGroupText>Search </InputGroupText>
                             </InputGroupAddon>
                             <Input
+                                placeholder="by name or author"
                                 onChange={(e) => {
                                     //e.target.value
                                     props.search(e.target.value);

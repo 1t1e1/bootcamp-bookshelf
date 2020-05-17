@@ -35,6 +35,9 @@ class Homepage extends React.Component {
                 return (
                     book.title
                         .toLowerCase()
+                        .indexOf(this.props.searchTerm.toLowerCase()) > -1 ||
+                    book.author
+                        .toLowerCase()
                         .indexOf(this.props.searchTerm.toLowerCase()) > -1
                 );
             });
