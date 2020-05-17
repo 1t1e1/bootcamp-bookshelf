@@ -32,10 +32,11 @@ const AddBookForm = (props) => {
         imageUrl: "",
         status: "",
         review: "",
+        goodread: "",
     };
     if (props.isEdit && props.book) {
         // review gerekli olup olmadigini iyice sordula
-        initialValues = { review: "", ...props.book };
+        initialValues = { review: "", goodread: "", ...props.book };
     }
     return (
         <div>
@@ -165,6 +166,17 @@ const AddBookForm = (props) => {
                             {errors.review && (
                                 <FormFeedback>{errors.review}</FormFeedback>
                             )}
+                        </FormGroup>
+                        <FormGroup>
+                            <Label for="goodread">Goodread Link</Label>
+                            <Input
+                                type="url"
+                                name="goodread"
+                                id="goodread"
+                                placeholder="url of the book in goodread"
+                                value={values.goodread}
+                                onChange={handleChange}
+                            />
                         </FormGroup>
                         {props.isEdit ? (
                             <Button color="primary">Save</Button>

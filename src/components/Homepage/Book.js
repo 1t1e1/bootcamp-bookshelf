@@ -26,6 +26,19 @@ const Book = (props) => {
                 <CardLink>
                     <Link to={`/edit-book/${id}`}>Edit Book</Link>
                 </CardLink>
+                {
+                    props.goodread && (
+                        <CardLink>
+                            {/* <Link to={`${id}`}>Goodreads Link </Link> */}
+                            <a target="_blank" href={props.goodread}>
+                                Goodreads
+                            </a>
+                        </CardLink>
+                    )
+                    // <CardLink>
+                    //     <Link to={`/edit-book/${id}`}>Link Broke </Link>
+                    // </CardLink>
+                }
             </CardBody>
         </StyledBookCard>
     );
