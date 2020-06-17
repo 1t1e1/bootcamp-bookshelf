@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bootcamp-bookshelf/static/css/main.814754d9.chunk.css",
+    "main.js": "/bootcamp-bookshelf/static/js/main.18ca4c96.chunk.js",
+    "main.js.map": "/bootcamp-bookshelf/static/js/main.18ca4c96.chunk.js.map",
+    "runtime-main.js": "/bootcamp-bookshelf/static/js/runtime-main.849c3f76.js",
+    "runtime-main.js.map": "/bootcamp-bookshelf/static/js/runtime-main.849c3f76.js.map",
+    "static/css/2.de424728.chunk.css": "/bootcamp-bookshelf/static/css/2.de424728.chunk.css",
+    "static/js/2.0440e461.chunk.js": "/bootcamp-bookshelf/static/js/2.0440e461.chunk.js",
+    "static/js/2.0440e461.chunk.js.map": "/bootcamp-bookshelf/static/js/2.0440e461.chunk.js.map",
+    "index.html": "/bootcamp-bookshelf/index.html",
+    "precache-manifest.3f9383b0a3674834eb856becba019978.js": "/bootcamp-bookshelf/precache-manifest.3f9383b0a3674834eb856becba019978.js",
+    "service-worker.js": "/bootcamp-bookshelf/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/bootcamp-bookshelf/static/css/2.de424728.chunk.css.map",
+    "static/css/main.814754d9.chunk.css.map": "/bootcamp-bookshelf/static/css/main.814754d9.chunk.css.map",
+    "static/js/2.0440e461.chunk.js.LICENSE.txt": "/bootcamp-bookshelf/static/js/2.0440e461.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.849c3f76.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.0440e461.chunk.js",
+    "static/css/main.814754d9.chunk.css",
+    "static/js/main.18ca4c96.chunk.js"
+  ]
+}
